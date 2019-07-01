@@ -1,10 +1,13 @@
 C:\Users\marcus.carraschi\source\repos\SalarioBrutoCalculo\SalarioBrutoCalculo\bin\Debug\SalarioBrutoCalculo.exe.config
+C:\Users\marcus.carraschi\source\repos\SalarioBrutoCalculo\SalarioBrutoCalculo\bin\Debug\SalarioBrutoCalculo.exe.manifest
+C:\Users\marcus.carraschi\source\repos\SalarioBrutoCalculo\SalarioBrutoCalculo\bin\Debug\SalarioBrutoCalculo.application
 C:\Users\marcus.carraschi\source\repos\SalarioBrutoCalculo\SalarioBrutoCalculo\bin\Debug\SalarioBrutoCalculo.exe
 C:\Users\marcus.carraschi\source\repos\SalarioBrutoCalculo\SalarioBrutoCalculo\bin\Debug\SalarioBrutoCalculo.pdb
+C:\Users\marcus.carraschi\source\repos\SalarioBrutoCalculo\SalarioBrutoCalculo\obj\Debug\SalarioBrutoCalculo.mainFormCalculatorSalaryBruto.resources
 C:\Users\marcus.carraschi\source\repos\SalarioBrutoCalculo\SalarioBrutoCalculo\obj\Debug\SalarioBrutoCalculo.Properties.Resources.resources
 C:\Users\marcus.carraschi\source\repos\SalarioBrutoCalculo\SalarioBrutoCalculo\obj\Debug\SalarioBrutoCalculo.csproj.GenerateResource.cache
 C:\Users\marcus.carraschi\source\repos\SalarioBrutoCalculo\SalarioBrutoCalculo\obj\Debug\SalarioBrutoCalculo.csproj.CoreCompileInputs.cache
+C:\Users\marcus.carraschi\source\repos\SalarioBrutoCalculo\SalarioBrutoCalculo\obj\Debug\SalarioBrutoCalculo.exe.manifest
+C:\Users\marcus.carraschi\source\repos\SalarioBrutoCalculo\SalarioBrutoCalculo\obj\Debug\SalarioBrutoCalculo.application
 C:\Users\marcus.carraschi\source\repos\SalarioBrutoCalculo\SalarioBrutoCalculo\obj\Debug\SalarioBrutoCalculo.exe
 C:\Users\marcus.carraschi\source\repos\SalarioBrutoCalculo\SalarioBrutoCalculo\obj\Debug\SalarioBrutoCalculo.pdb
-C:\Users\marcus.carraschi\source\repos\SalarioBrutoCalculo\SalarioBrutoCalculo\obj\Debug\SalarioBrutoCalculo.csprojAssemblyReference.cache
-C:\Users\marcus.carraschi\source\repos\SalarioBrutoCalculo\SalarioBrutoCalculo\obj\Debug\SalarioBrutoCalculo.mainFormCalculatorSalaryBruto.resources

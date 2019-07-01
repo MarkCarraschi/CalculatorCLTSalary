@@ -32,14 +32,14 @@
             this.txtSalarioBruto = new System.Windows.Forms.TextBox();
             this.chkTransport = new System.Windows.Forms.CheckBox();
             this.pnlTransport = new System.Windows.Forms.Panel();
-            this.chkTransportTotal = new System.Windows.Forms.CheckBox();
-            this.chkTransportGoBack = new System.Windows.Forms.CheckBox();
-            this.lblTransportGo = new System.Windows.Forms.Label();
-            this.txtTransportGo = new System.Windows.Forms.TextBox();
-            this.txtTransportBack = new System.Windows.Forms.TextBox();
-            this.lblTransportBack = new System.Windows.Forms.Label();
             this.txtTransportTotal = new System.Windows.Forms.TextBox();
             this.lblTransportTotal = new System.Windows.Forms.Label();
+            this.txtTransportBack = new System.Windows.Forms.TextBox();
+            this.lblTransportBack = new System.Windows.Forms.Label();
+            this.txtTransportGo = new System.Windows.Forms.TextBox();
+            this.lblTransportGo = new System.Windows.Forms.Label();
+            this.chkTransportGoBack = new System.Windows.Forms.CheckBox();
+            this.chkTransportTotal = new System.Windows.Forms.CheckBox();
             this.btnCalculate = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.pnlTransport.SuspendLayout();
@@ -70,7 +70,6 @@
             this.chkTransport.TabIndex = 2;
             this.chkTransport.Text = "Uso vale transporte";
             this.chkTransport.UseVisualStyleBackColor = true;
-            this.chkTransport.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // pnlTransport
             // 
@@ -88,41 +87,21 @@
             this.pnlTransport.Size = new System.Drawing.Size(423, 138);
             this.pnlTransport.TabIndex = 3;
             // 
-            // chkTransportTotal
+            // txtTransportTotal
             // 
-            this.chkTransportTotal.AutoSize = true;
-            this.chkTransportTotal.Location = new System.Drawing.Point(26, 16);
-            this.chkTransportTotal.Name = "chkTransportTotal";
-            this.chkTransportTotal.Size = new System.Drawing.Size(76, 17);
-            this.chkTransportTotal.TabIndex = 0;
-            this.chkTransportTotal.Text = "Valor total:";
-            this.chkTransportTotal.UseVisualStyleBackColor = true;
+            this.txtTransportTotal.Location = new System.Drawing.Point(84, 55);
+            this.txtTransportTotal.Name = "txtTransportTotal";
+            this.txtTransportTotal.Size = new System.Drawing.Size(73, 20);
+            this.txtTransportTotal.TabIndex = 7;
             // 
-            // chkTransportGoBack
+            // lblTransportTotal
             // 
-            this.chkTransportGoBack.AutoSize = true;
-            this.chkTransportGoBack.Location = new System.Drawing.Point(257, 16);
-            this.chkTransportGoBack.Name = "chkTransportGoBack";
-            this.chkTransportGoBack.Size = new System.Drawing.Size(79, 17);
-            this.chkTransportGoBack.TabIndex = 1;
-            this.chkTransportGoBack.Text = "Ida e volta:";
-            this.chkTransportGoBack.UseVisualStyleBackColor = true;
-            // 
-            // lblTransportGo
-            // 
-            this.lblTransportGo.AutoSize = true;
-            this.lblTransportGo.Location = new System.Drawing.Point(264, 62);
-            this.lblTransportGo.Name = "lblTransportGo";
-            this.lblTransportGo.Size = new System.Drawing.Size(28, 13);
-            this.lblTransportGo.TabIndex = 2;
-            this.lblTransportGo.Text = "IDA:";
-            // 
-            // txtTransportGo
-            // 
-            this.txtTransportGo.Location = new System.Drawing.Point(326, 59);
-            this.txtTransportGo.Name = "txtTransportGo";
-            this.txtTransportGo.Size = new System.Drawing.Size(73, 20);
-            this.txtTransportGo.TabIndex = 3;
+            this.lblTransportTotal.AutoSize = true;
+            this.lblTransportTotal.Location = new System.Drawing.Point(22, 58);
+            this.lblTransportTotal.Name = "lblTransportTotal";
+            this.lblTransportTotal.Size = new System.Drawing.Size(45, 13);
+            this.lblTransportTotal.TabIndex = 6;
+            this.lblTransportTotal.Text = "TOTAL:";
             // 
             // txtTransportBack
             // 
@@ -140,21 +119,41 @@
             this.lblTransportBack.TabIndex = 4;
             this.lblTransportBack.Text = "VOLTA:";
             // 
-            // txtTransportTotal
+            // txtTransportGo
             // 
-            this.txtTransportTotal.Location = new System.Drawing.Point(84, 55);
-            this.txtTransportTotal.Name = "txtTransportTotal";
-            this.txtTransportTotal.Size = new System.Drawing.Size(73, 20);
-            this.txtTransportTotal.TabIndex = 7;
+            this.txtTransportGo.Location = new System.Drawing.Point(326, 59);
+            this.txtTransportGo.Name = "txtTransportGo";
+            this.txtTransportGo.Size = new System.Drawing.Size(73, 20);
+            this.txtTransportGo.TabIndex = 3;
             // 
-            // lblTransportTotal
+            // lblTransportGo
             // 
-            this.lblTransportTotal.AutoSize = true;
-            this.lblTransportTotal.Location = new System.Drawing.Point(22, 58);
-            this.lblTransportTotal.Name = "lblTransportTotal";
-            this.lblTransportTotal.Size = new System.Drawing.Size(45, 13);
-            this.lblTransportTotal.TabIndex = 6;
-            this.lblTransportTotal.Text = "TOTAL:";
+            this.lblTransportGo.AutoSize = true;
+            this.lblTransportGo.Location = new System.Drawing.Point(264, 62);
+            this.lblTransportGo.Name = "lblTransportGo";
+            this.lblTransportGo.Size = new System.Drawing.Size(28, 13);
+            this.lblTransportGo.TabIndex = 2;
+            this.lblTransportGo.Text = "IDA:";
+            // 
+            // chkTransportGoBack
+            // 
+            this.chkTransportGoBack.AutoSize = true;
+            this.chkTransportGoBack.Location = new System.Drawing.Point(257, 16);
+            this.chkTransportGoBack.Name = "chkTransportGoBack";
+            this.chkTransportGoBack.Size = new System.Drawing.Size(79, 17);
+            this.chkTransportGoBack.TabIndex = 1;
+            this.chkTransportGoBack.Text = "Ida e volta:";
+            this.chkTransportGoBack.UseVisualStyleBackColor = true;
+            // 
+            // chkTransportTotal
+            // 
+            this.chkTransportTotal.AutoSize = true;
+            this.chkTransportTotal.Location = new System.Drawing.Point(26, 16);
+            this.chkTransportTotal.Name = "chkTransportTotal";
+            this.chkTransportTotal.Size = new System.Drawing.Size(76, 17);
+            this.chkTransportTotal.TabIndex = 0;
+            this.chkTransportTotal.Text = "Valor total:";
+            this.chkTransportTotal.UseVisualStyleBackColor = true;
             // 
             // btnCalculate
             // 
@@ -173,6 +172,7 @@
             this.btnReset.TabIndex = 5;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // mainFormCalculatorSalaryBruto
             // 
@@ -190,6 +190,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora salário líquido";
+            this.Load += new System.EventHandler(this.mainFormCalculatorSalaryBruto_Load);
             this.pnlTransport.ResumeLayout(false);
             this.pnlTransport.PerformLayout();
             this.ResumeLayout(false);

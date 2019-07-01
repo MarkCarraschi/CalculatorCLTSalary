@@ -12,18 +12,21 @@ namespace SalarioBrutoCalculo
 {
     public partial class mainFormCalculatorSalaryBruto : Form
     {
-        public mainFormCalculatorSalaryBruto()
-        {
+        public mainFormCalculatorSalaryBruto(){
             InitializeComponent();
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
+        private void btnReset_Click(object sender, EventArgs e){
+
+            txtSalarioBruto.Clear();
+            txtTransportBack.Clear();
+            txtTransportGo.Clear();
+            txtTransportTotal.Clear();
 
         }
 
-        private void toolStripLabel1_Click(object sender, EventArgs e)
-        {
+        private void mainFormCalculatorSalaryBruto_Load(object sender, EventArgs e){
+            //Set disable components
 
         }
     }
