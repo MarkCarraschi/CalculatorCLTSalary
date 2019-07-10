@@ -13,7 +13,7 @@ namespace SalarioBrutoCalculo.Model
             SetSalaryBase(value);
             CalculateIr();
             CalculateVt(transport);
-            Console.WriteLine("Valor do salário líquido: " + GetSalaryLiquido());
+            //Console.WriteLine("Valor do salário líquido: " + GetSalaryLiquido());
         }
         
         public void CalculateVt(double value){

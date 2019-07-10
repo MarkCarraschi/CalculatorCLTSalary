@@ -8,6 +8,8 @@ namespace SalarioBrutoCalculo.Model
 {
     class Comparative{
 
+        //Add another variables --> resources 
+
         public Comparative(DeductionCLT actualSalary, DeductionCLT salaryToCompare){
 
             SetActualSalary(actualSalary);
