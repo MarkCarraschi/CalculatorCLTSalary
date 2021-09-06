@@ -2,56 +2,59 @@ using System;
 
 namespace SalaryCalculator
 {
-    class Salary
+    class Output
     {
-        public double GrossSalary { get; set; }
+        public double GrossWage { get; set; } //The total amount before you withhold taxes and other deductions
+        public double NetSalary { get; set; }
         public double InssTax { get; set; }
         public double IrpfTax { get; set; }
-        public double FgtsTax { get; set; }
-        public double NetSalary { get; set; }
+        public double FgtsEarn { get; set; }
 
-        public Salary(double Salary)
+        public Output(double Salary)
         {
             CalculateNetSalary(Salary);
-            Console.WriteLine(this.NetSalary);
-            Console.WriteLine(String.Format("{0}", this.NetSalary));
-            //Console.ReadLine();
+            Console.WriteLine("-------------------------------------------------------");
+            Console.WriteLine(String.Format("Salário bruto: R$ {0:0.##}", this.GrossWage));
+            Console.WriteLine(String.Format("Salário líquido : R$ {0:0.##}", this.NetSalary));
+            Console.WriteLine(String.Format("Taxa INSS : R$ {0:0.##}", this.InssTax));
+            Console.WriteLine(String.Format("Taxa IRPF: R$ {0:0.##}", this.IrpfTax));
+            Console.WriteLine(String.Format("FGTS: R$ {0:0.##}", this.FgtsEarn));
+            Console.WriteLine("-------------------------------------------------------\n\n");
         }
 
-        public void CalculateNetSalary(double GrossSalary)
+        public void CalculateNetSalary(double GrossWage)
         {
-            this.InssTax = CalculateInssTax(GrossSalary);
-            double NewSalary = GrossSalary - this.InssTax;
-            this.IrpfTax = CalculateIrpfTax(NewSalary);
-            this.NetSalary = NewSalary - this.IrpfTax;
+            this.GrossWage = GrossWage;
+            this.FgtsEarn = GrossWage * 0.08;
+            this.InssTax = CalculateInssTax(GrossWage);
+            this.IrpfTax = CalculateIrpfTax(GrossWage - this.InssTax);
+            this.NetSalary = (GrossWage - this.InssTax) - this.IrpfTax;
         }
 
-        public double CalculateIrpfTax(double GrossSalary)
+        public double CalculateIrpfTax(double GrossWage)
         {
-            if (GrossSalary <= 1903.98)
+            if (GrossWage <= 1903.98)
                 return 0;
-            else if (GrossSalary >= 1903.99 && GrossSalary <= 2826.65)
-                return GrossSalary * 0.075 - 142.80;
-            else if (GrossSalary >= 2026.66 && GrossSalary <= 3751.05)
-                return GrossSalary * 0.15 - 354.80;
-            else if (GrossSalary >= 3751.06 && GrossSalary <= 4664.68)
-                return GrossSalary * 0.225 - 636.13;
+            else if (GrossWage >= 1903.99 && GrossWage <= 2826.65)
+                return GrossWage * 0.075 - 142.80;
+            else if (GrossWage >= 2026.66 && GrossWage <= 3751.05)
+                return GrossWage * 0.15 - 354.80;
+            else if (GrossWage >= 3751.06 && GrossWage <= 4664.68)
+                return GrossWage * 0.225 - 636.13;
             else
-                return GrossSalary * 0.275 - 869.36;
+                return GrossWage * 0.275 - 869.36;
         }
 
-        public double CalculateInssTax(double GrossSalary)
+        public double CalculateInssTax(double GrossWage)
         {
-            if (GrossSalary <= 1100)
-                return GrossSalary * 0.075;
-            else if (GrossSalary >= 1101.01 && GrossSalary <= 2203.48)
-                return GrossSalary * 0.09;
-            else if (GrossSalary >= 2089.61 && GrossSalary <= 3305.22)
-                return GrossSalary * 0.12;
-            else if (GrossSalary >= 3305.23 && GrossSalary <= 6433.57)
-                return GrossSalary * 0.14;
+            if (GrossWage <= 1100)
+                return 1100 * 0.075;
+            else if (GrossWage >= 1101.01 && GrossWage <= 2203.48)
+                return (GrossWage * 0.09) - 16.50;
+            else if (GrossWage >= 2089.61 && GrossWage <= 3305.22)
+                return (GrossWage * 0.12) - 82.61;
             else
-                return 751.96;
+                return (GrossWage * 0.14) - 148.72;
         }
 
     }
