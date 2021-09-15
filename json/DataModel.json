@@ -1,0 +1,64 @@
+{
+    "CltTax": {
+        "Inss": [
+            {
+                "id": "1",
+                "value": 0.075,
+                "deduction": 0.0,
+                "min": 0.0,
+                "max": 1100
+            },
+            {
+                "id": "2",
+                "value": 0.09,
+                "deduction": 16.50,
+                "min": 1101.01,
+                "max": 2203.48
+            },
+            {
+                "id": "3",
+                "value": 0.12,
+                "deduction": 82.61,
+                "min": 2203.49,
+                "max": 3305.22
+            },
+            {
+                "id": "4",
+                "value": 0.14,
+                "deduction": 148.72,
+                "min": 3305.23,
+                "max": "N/A"
+            }
+        ],
+        "Irpf": [
+            {
+                "id": "1",
+                "value": 0.0,
+                "deduction": 0.0,
+                "min": 0.0,
+                "max": 1903.98
+            },
+            {
+                "id": "2",
+                "value": 1,
+                "deduction": 0.0,
+                "min": 1101.01,
+                "max": 2203.48
+            },
+            {
+                "id": "3",
+                "value": 0.12,
+                "deduction": 82.61,
+                "min": 2203.49,
+                "max": 3305.22
+            },
+            {
+                "id": "4",
+                "value": 0.14,
+                "deduction": 148.72,
+                "min": 3305.23,
+                "max": "N/A"
+            }
+        ]
+    }
+}
